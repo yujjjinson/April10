@@ -1,0 +1,24 @@
+package senior;
+
+import java.awt.Frame;
+
+class MyWindow extends Frame {
+	MyWindow(String str){
+		super(str);//Frame�쓽 �깮�꽦�옄 �샇異�
+		this.setSize(300, 500);//�쐢�룄�슦�쓽 媛�濡�,�꽭濡쒓만�씠 �꽕�젙
+		this.setVisible(true);//�쐞�룄�슦 �솢�꽦�솕
+	}
+}
+public class Study2 {
+	public static void main(String[] args) {
+		MyWindow mw = new MyWindow("臾몄옄�뿴");
+	}
+}
+
+
+
+
+
+
+
+
