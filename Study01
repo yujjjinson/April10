@@ -1,0 +1,123 @@
+package senior;
+
+class A {
+	A() {
+		super();// �옄諛붿쓽 紐⑤뱺 �겢�옒�뒪�뒗 �옄�룞�긽�냽�쑝濡� 留뚮뱾�뼱吏꾨떎.
+		System.out.println("�굹�뒗 A�엯�땲�떎.");
+	}// A �겢�옒�뒪�쓽 �깮�꽦�옄
+}
+
+class B extends A {
+	B() {
+		// �긽�냽愿�怨꾩뿉�꽌 議곗긽�쓽 �깮�꽦�옄瑜� �샇異쒗븯�뒗 �봽濡쒓렇�옩�쓣 �빐�빞�븳�떎.
+		// 洹몃윴�뜲, 議곗긽�쓽 �깮�꽦�옄 �샇異� �봽濡쒓렇�옩�쓣 �깮�왂�븯硫�, �옄�룞�쑝濡� �봽濡쒓렇�옩�맂�떎.
+		// �깮�꽦�옄媛� �깮�꽦�옄瑜� �샇異쒗븷 �븣 �깮�꽦�옄�씠由꾩쓣 this�씪怨� �븳�떎.
+		// �깮�꽦�옄媛� 議곗긽�쓽 �깮�꽦�옄瑜� �샇異쒗븷 �븣 �깮�꽦�옄�씠由꾩쓣 super�씪怨� �븳�떎.
+		super();
+		System.out.println("�굹�뒗 B�엯�땲�떎.");
+	}
+}
+
+class C {
+	C() {
+	}
+}
+
+public class Study1 {
+	public static void main(String[] args) {
+		A a = new A();
+		B b = new B();
+		C c = new C();
+	}
+}
+
+class IamKing {
+	String name;
+
+	IamKing(String name) {
+		this.name = name;
+	}
+}
+
+class IamSon extends IamKing {
+	IamSon(String name) {
+		super(name);
+		System.out.println("�굹�뒗 �솗�쓽 �옄�떇�씠�떎.");
+	}
+}
+
+class Apple {
+	int price;
+
+	Apple(int price) {
+		this.price = price;
+	}
+}
+
+/////////////quiz1////////////////
+class One {
+	int i;
+	String name;
+
+	One(int i) {
+		this.i = i;
+	}
+
+	One(String name) {
+		this.name = name;
+	}
+}
+
+class Two extends One {
+	Two(int a) {
+		super(a);
+	}
+
+	Two(String a) {
+		super(a);
+	}
+}
+
+///////////////quiz2////////////
+class Hana {
+	int i;	int j;	double k;
+
+	Hana(int i, int j) {
+		this.i = i;		this.j = j;
+	}
+
+	Hana(double k) {	this.k = k;
+	}
+}
+
+class Dool extends Hana {
+	Dool(int a, int b){		super(a,b);	}
+	Dool(double a){ super(a);}
+}
+
+class Seet extends Dool {
+	Seet(int a, int b){
+		super(a,b);
+	}
+	Seet(double a){super(a);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
